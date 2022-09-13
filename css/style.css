@@ -4,47 +4,95 @@
   box-sizing: border-box;
 }
 
-.debug {
-  background-color: red;
-  border: 1px solid cornflowerblue;
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
+  display: flex;
+  align-items: center;
   background-color: blue;
-  height: 50px;
-  /*da elimare*/
+  height: 80px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .jumbotron {
-  background-color: red;
-  height: 100px;
-}
-
-main {
+  height: 550px;
+  background-color: lightblue;
   display: flex;
-  background-color: orange;
-  height: 600px;
-  /*da elimare, ci va l'img*/
+  justify-content: center;
+  align-items: center;
 }
 
-.box {
-  border: 2px solid;
-  background-color: green;
-  width: 90%;
-  height: 100px;
-  text-align: center;
+.jumbotron .content {
+  max-width: 800px;
+  background-color: brown;
+}
+
+main{
+  
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section .bg-grey {
+  background-color: blanchedalmond;
+}
+
+section .container {
   display: flex;
-  justify-content: space-evenly;
+  min-height: 500px;
+  background-color: azure;
 }
 
-main .primo {
-  border: 2px solid;
-  background-color: purple;
-  height: 40px;
+section .container .img {
+  width: 60%;
+  min-width: 300px;
+  background-color: bisque;
 }
 
-main .secondo {
-  border: 2px solid;
-  background-color: purple;
-  height: 40px;
+section .container .text {
+  width: 40%;
+  min-width: 300px;
+  background-color: yellowgreen;
+}
+
+section.section-bottom .container{
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-top{
+  display: flex;
+  background-color: aquamarine;
+  min-height: 300px;
+}
+
+.footer-top .col-social{
+  width: calc(100% / 3);
+  min-height: 200px;
+  background-color: darkgreen;
+}
+
+.footer-top .col-menu{
+  width: calc(100% / 6);
+  
+}
+
+.footer-bottom{
+  min-height: 200px;
+  background-color: cornflowerblue;
 }
